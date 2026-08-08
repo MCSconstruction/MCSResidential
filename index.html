@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kansas City Residential Concrete Driveways, Patios &amp; Garage Floors | Missouri Concrete Services</title>
+  <meta name="description" content="Premium residential concrete flatwork in Kansas City. Driveway replacements, custom patios, and garage floors finished in 1 to 2 days. Free estimates in 24 hours. Serving St. Joseph to Peculiar and east to the Kickapoo Reservation." />
+
+  <!--
+    MCS RESIDENTIAL — Google Ads landing page (separate from the main site).
+    Hosting: GitHub Pages (name this file index.html at the repo root).
+    Form delivery: FormSubmit.co -> missouriconcrete@gmail.com (already activated).
+    On submit, visitors are redirected to thank-you.html (the _next field).
+    Photo uploads are OPTIONAL and never block a submission.
+  -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yellow:        "#F4DB03",
+            "yellow-dark": "#D69E00",
+            charcoal:      "#2A2A2A",
+            ink:           "#0A0A0A",
+            concrete:      "#E8E6E1",
+            "concrete-dk": "#C9C6BE",
+            body:          "#1A1A1A",
+            muted:         "#5A5A5A",
+            hair:          "#D9D6D0"
+          },
+          fontFamily: {
+            sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    /* Placeholder tile for gallery photos not yet supplied */
+    .photo-soon {
+      background:
+        repeating-linear-gradient(45deg, #E8E6E1, #E8E6E1 14px, #DEDBD4 14px, #DEDBD4 28px);
+    }
+
+    /* ---- Before/After slider ---- */
+    .ba { position: relative; width: 100%; aspect-ratio: 4 / 3; overflow: hidden;
+          background: #E8E6E1; touch-action: none; user-select: none; }
+    .ba img { position: absolute; inset: 0; width: 100%; height: 100%;
+              object-fit: cover; display: block; pointer-events: none; }
+    .ba-before-wrap { position: absolute; inset: 0; width: 50%; overflow: hidden;
+                      will-change: width; }
+    .ba-before-wrap .ba-before { width: 100%; height: 100%; }
+    /* Keep the "before" image at the container's true width so it doesn't squish */
+    .ba .ba-before { position: absolute; top: 0; left: 0; height: 100%; }
+    .ba-tag { position: absolute; top: 10px; z-index: 3; font-size: 11px;
+              font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+              color: #fff; background: rgba(10,10,10,.72); padding: 4px 8px;
+              border-radius: 6px; pointer-events: none; }
+    .ba-tag-l { left: 10px; }
+    .ba-tag-r { right: 10px; }
+    .ba-line { position: absolute; top: 0; bottom: 0; left: 50%; width: 3px;
+               background: #F4DB03; transform: translateX(-50%); z-index: 3;
+               pointer-events: none; }
+    .ba-handle { position: absolute; top: 50%; left: 50%; z-index: 4;
+                 transform: translate(-50%, -50%); width: 40px; height: 40px;
+                 border-radius: 9999px; background: #F4DB03; border: 3px solid #fff;
+                 box-shadow: 0 2px 8px rgba(0,0,0,.35); display: flex;
+                 align-items: center; justify-content: center; pointer-events: none; }
+    .ba-range { position: absolute; inset: 0; z-index: 5; width: 100%; height: 100%;
+                margin: 0; opacity: 0; cursor: ew-resize; }
+  </style>
+</head>
+
+<body class="font-sans text-body bg-white antialiased">
+
+  <!-- ============ STICKY CALL BAR (mobile-first) ============ -->
+  <header class="sticky top-0 z-50 bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="text-yellow font-extrabold tracking-tight text-lg leading-none">MCS</span>
+        <span class="hidden sm:inline text-sm text-white/70 truncate">Missouri Concrete Services &middot; Since 2017</span>
+      </div>
+      <a href="tel:8166922900"
+         class="shrink-0 bg-yellow text-ink font-bold rounded-lg px-4 py-2 text-sm sm:text-base hover:bg-yellow-dark transition-colors">
+        Call 816-692-2900
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 py-14 sm:py-20 text-center">
+      <p class="text-yellow font-semibold tracking-widest uppercase text-xs sm:text-sm mb-4">
+        Residential Concrete Contractor &middot; Since 2017
+      </p>
+      <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight max-w-4xl mx-auto">
+        Kansas City&rsquo;s Premium Residential Concrete Flatwork Experts
+      </h1>
+      <p class="mt-5 text-lg sm:text-2xl text-white/85 max-w-3xl mx-auto">
+        Driveway Replacements, Custom Patios, &amp; Garage Floors Finished Perfectly in 1 to 2 Days.
+      </p>
+      <p class="mt-4 text-sm sm:text-base text-white/60 max-w-2xl mx-auto">
+        Serving the Kansas City metro and surrounding areas &mdash; from St. Joseph to Peculiar, and east to the Kickapoo Reservation.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#estimate"
+           class="bg-yellow text-ink font-bold rounded-lg px-8 py-4 text-lg hover:bg-yellow-dark transition-colors">
+          Get My Free Estimate
+        </a>
+        <a href="tel:8166922900"
+           class="border-2 border-white/40 text-white font-bold rounded-lg px-8 py-4 text-lg hover:bg-white hover:text-ink transition-colors">
+          Call 816-692-2900
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST BADGES ============ -->
+  <section class="bg-concrete border-b border-hair">
+    <div class="max-w-6xl mx-auto px-4 py-8 grid gap-4 sm:grid-cols-3">
+      <div class="bg-white rounded-xl border border-hair p-5 text-center">
+        <div class="text-yellow-dark font-extrabold text-sm tracking-wide uppercase mb-2">Safety First</div>
+        <h3 class="font-bold text-body leading-snug">OSHA 1926 Certified Trainer Overseeing Every Project</h3>
+        <p class="text-sm text-muted mt-2">We bring commercial-grade jobsite safety standards to protect your home and property.</p>
+      </div>
+      <div class="bg-white rounded-xl border border-hair p-5 text-center">
+        <div class="text-yellow-dark font-extrabold text-sm tracking-wide uppercase mb-2">Fully Covered</div>
+        <h3 class="font-bold text-body leading-snug">Fully Licensed &amp; Premium Business Insurance</h3>
+        <p class="text-sm text-muted mt-2">Licensed, insured, and accountable from the first pour to final cleanup.</p>
+      </div>
+      <div class="bg-white rounded-xl border border-hair p-5 text-center">
+        <div class="text-yellow-dark font-extrabold text-sm tracking-wide uppercase mb-2">Fast Quotes</div>
+        <h3 class="font-bold text-body leading-snug">Estimates in 24 Hours</h3>
+        <p class="text-sm text-muted mt-2">No site visit required &mdash; just send a few photos and we&rsquo;ll quote it fast.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VALUE PROPOSITION ============ -->
+  <section class="bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-14 sm:py-20">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-body">Concrete Done Right &mdash; and Done Fast</h2>
+        <p class="mt-4 text-muted text-lg">Most residential flatwork is poured and finished in one to two days, with the details that keep it looking great for years.</p>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-3">
+        <div class="rounded-xl border border-hair p-6">
+          <div class="w-11 h-11 rounded-lg bg-yellow flex items-center justify-center font-extrabold text-ink text-xl mb-4">1</div>
+          <h3 class="font-bold text-lg text-body">1&ndash;2 Day Turnaround</h3>
+          <p class="mt-2 text-muted">Tear-out, prep, and pour handled quickly and cleanly &mdash; your driveway, patio, or garage floor back in service in days, not weeks.</p>
+        </div>
+        <div class="rounded-xl border border-hair p-6">
+          <div class="w-11 h-11 rounded-lg bg-yellow flex items-center justify-center font-extrabold text-ink text-xl mb-4">2</div>
+          <h3 class="font-bold text-lg text-body">Built to Resist Cracks</h3>
+          <p class="mt-2 text-muted">Proper sub-base compaction and grading is where lasting concrete is won or lost. We do the groundwork right so your slab stays flat and solid.</p>
+        </div>
+        <div class="rounded-xl border border-hair p-6">
+          <div class="w-11 h-11 rounded-lg bg-yellow flex items-center justify-center font-extrabold text-ink text-xl mb-4">3</div>
+          <h3 class="font-bold text-lg text-body">Property Protection Guarantee</h3>
+          <p class="mt-2 text-muted">We treat your lawn and landscaping with absolute respect during demo and cleanup &mdash; and leave your property better than we found it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REAL WORK GALLERY (before/after sliders) ============ -->
+  <section class="bg-concrete border-y border-hair">
+    <div class="max-w-6xl mx-auto px-4 py-14 sm:py-20">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-body">Our Recent Work</h2>
+        <p class="mt-3 text-muted text-lg">Real local jobs, shot on-site. Drag the slider to see the transformation.</p>
+      </div>
+
+      <div class="grid gap-8 grid-cols-1 lg:grid-cols-3">
+
+        <!-- Driveway: Before / After -->
+        <figure class="bg-white rounded-xl overflow-hidden border border-hair shadow-sm">
+          <div class="ba" data-ba>
+            <img class="ba-after"  src="img/driveway-after.jpg"  alt="Finished concrete driveway replacement in Kansas City" loading="lazy" />
+            <div class="ba-before-wrap">
+              <img class="ba-before" src="img/driveway-before.jpg" alt="Cracked driveway before replacement" loading="lazy" />
+            </div>
+            <span class="ba-tag ba-tag-l">Before</span>
+            <span class="ba-tag ba-tag-r">After</span>
+            <div class="ba-line"></div>
+            <div class="ba-handle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" transform="translate(12 0)"/></svg>
+            </div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Reveal driveway before and after" />
+          </div>
+          <figcaption class="p-4">
+            <p class="font-bold text-body leading-snug">Driveway replacement &mdash; torn out and repoured in 2 days.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Patio: Before / After -->
+        <figure class="bg-white rounded-xl overflow-hidden border border-hair shadow-sm">
+          <div class="ba" data-ba>
+            <img class="ba-after"  src="img/patio-after.jpg"  alt="Finished backyard concrete patio" loading="lazy" />
+            <div class="ba-before-wrap">
+              <img class="ba-before" src="img/patio-before.jpg" alt="Backyard before patio installation" loading="lazy" />
+            </div>
+            <span class="ba-tag ba-tag-l">Before</span>
+            <span class="ba-tag ba-tag-r">After</span>
+            <div class="ba-line"></div>
+            <div class="ba-handle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" transform="translate(12 0)"/></svg>
+            </div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Reveal patio before and after" />
+          </div>
+          <figcaption class="p-4">
+            <p class="font-bold text-body leading-snug">Custom backyard patio &mdash; a fresh outdoor living space.</p>
+          </figcaption>
+        </figure>
+
+        <!-- Garage: During / After -->
+        <figure class="bg-white rounded-xl overflow-hidden border border-hair shadow-sm">
+          <div class="ba" data-ba>
+            <img class="ba-after"  src="img/garage-after.jpg"  alt="Finished garage concrete floor, flat and clean" loading="lazy" />
+            <div class="ba-before-wrap">
+              <img class="ba-before" src="img/garage-during.jpg" alt="Garage floor pour in progress" loading="lazy" />
+            </div>
+            <span class="ba-tag ba-tag-l">During</span>
+            <span class="ba-tag ba-tag-r">After</span>
+            <div class="ba-line"></div>
+            <div class="ba-handle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" transform="translate(12 0)"/></svg>
+            </div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Reveal garage floor during and after" />
+          </div>
+          <figcaption class="p-4">
+            <p class="font-bold text-body leading-snug">Garage floor pour &mdash; flat, level, and ready to use.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ESTIMATE FORM ============ -->
+  <section id="estimate" class="bg-white">
+    <div class="max-w-3xl mx-auto px-4 py-14 sm:py-20">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-body">Get Your Free Estimate</h2>
+        <p class="mt-3 text-muted text-lg">Tell us about your project. We reply within 24 hours &mdash; no site visit required.</p>
+      </div>
+
+      <form action="https://formsubmit.co/missouriconcrete@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            class="bg-concrete rounded-2xl border border-hair p-6 sm:p-8 grid gap-5">
+
+        <!-- FormSubmit configuration (email is hidden from visitors) -->
+        <input type="hidden" name="_subject" value="New Residential Estimate Request — MCS" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="thank-you.html" />
+        <!-- Honeypot: leave blank, blocks spam bots -->
+        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
+
+        <div>
+          <label class="block font-semibold text-body mb-1" for="full_name">Full Name *</label>
+          <input id="full_name" name="full_name" type="text" required
+                 class="w-full rounded-lg border border-hair px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-yellow" />
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label class="block font-semibold text-body mb-1" for="phone">Phone *</label>
+            <input id="phone" name="phone" type="tel" required
+                   class="w-full rounded-lg border border-hair px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-yellow" />
+          </div>
+          <div>
+            <label class="block font-semibold text-body mb-1" for="email">Email *</label>
+            <input id="email" name="email" type="email" required
+                   class="w-full rounded-lg border border-hair px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-yellow" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-body mb-1" for="project_street_address">Project Street Address</label>
+          <input id="project_street_address" name="project_street_address" type="text"
+                 class="w-full rounded-lg border border-hair px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-yellow" />
+        </div>
+
+        <div>
+          <label class="block font-semibold text-body mb-1" for="project_city_state">City &amp; State</label>
+          <input id="project_city_state" name="project_city_state" type="text" placeholder="e.g. Kansas City, MO"
+                 class="w-full rounded-lg border border-hair px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-yellow" />
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label class="block font-semibold text-body mb-1" for="project_type">Project Type *</label>
+            <select id="project_type" name="project_type" required
+                    class="w-full rounded-lg border border-hair px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-yellow">
+              <option value="" disabled selected>Choose one&hellip;</option>
+              <option>Driveway Replacement</option>
+              <option>New Backyard Patio</option>
+              <option>Garage Floor Pouring</option>
+              <option>Other Flatwork</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-body mb-1" for="timeline">Timeline</label>
+            <select id="timeline" name="timeline"
+                    class="w-full rounded-lg border border-hair px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-yellow">
+              <option value="" disabled selected>Choose one&hellip;</option>
+              <option>As soon as possible</option>
+              <option>Within 1 month</option>
+              <option>1 to 3 months</option>
+              <option>Just getting pricing</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-body mb-1" for="description">Project Description *</label>
+          <textarea id="description" name="description" rows="4" required
+                    placeholder="Tell us about the area — size, current condition, and what you have in mind."
+                    class="w-full rounded-lg border border-hair px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-yellow"></textarea>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-body mb-1" for="attachment">
+            Upload 2&ndash;3 photos of your current project area from your phone for a lightning-fast quote! <span class="font-normal text-muted">(optional)</span>
+          </label>
+          <input id="attachment" name="attachment" type="file" accept="image/*" multiple
+                 class="w-full rounded-lg border border-hair px-4 py-3 bg-white file:mr-3 file:rounded file:border-0 file:bg-yellow file:px-3 file:py-2 file:font-semibold file:text-ink" />
+          <p class="text-xs text-muted mt-1">Photos help us quote faster, but they&rsquo;re not required. Please keep total uploads under about 10&nbsp;MB.</p>
+        </div>
+
+        <button type="submit"
+                class="w-full bg-yellow text-ink font-extrabold text-lg rounded-lg px-6 py-4 hover:bg-yellow-dark transition-colors">
+          Submit My Free Estimate Request
+        </button>
+        <p class="text-center text-sm text-muted">Prefer to talk? Call <a href="tel:8166922900" class="font-bold text-body underline">816-692-2900</a>.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-center">
+      <p class="text-yellow font-extrabold text-lg">Missouri Concrete Services</p>
+      <p class="mt-2 text-white/70">Residential Concrete Flatwork &middot; Established 2017</p>
+      <p class="mt-1 text-white/70">Serving the Kansas City metro &mdash; St. Joseph to Peculiar, east to the Kickapoo Reservation.</p>
+      <a href="tel:8166922900" class="inline-block mt-4 bg-yellow text-ink font-bold rounded-lg px-6 py-3 hover:bg-yellow-dark transition-colors">
+        Call 816-692-2900
+      </a>
+      <p class="mt-6 text-xs text-white/40">&copy; 2026 Missouri Concrete Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ---- Before/After slider activation (self-contained, no libraries) ---- -->
+  <script>
+    (function () {
+      function initBA(el) {
+        var range  = el.querySelector('.ba-range');
+        var wrap   = el.querySelector('.ba-before-wrap');
+        var before = el.querySelector('.ba-before');
+        var line   = el.querySelector('.ba-line');
+        var handle = el.querySelector('.ba-handle');
+
+        function sizeBefore() {
+          // Keep the "before" image the full container width so it never squishes as the reveal changes.
+          before.style.width = el.clientWidth + 'px';
+        }
+        function setPos(pct) {
+          pct = Math.max(0, Math.min(100, pct));
+          wrap.style.width = pct + '%';
+          line.style.left = pct + '%';
+          handle.style.left = pct + '%';
+        }
+        sizeBefore();
+        setPos(range.value);
+        range.addEventListener('input', function () { setPos(range.value); });
+        window.addEventListener('resize', function () { sizeBefore(); setPos(range.value); });
+      }
+      document.querySelectorAll('[data-ba]').forEach(initBA);
+    })();
+  </script>
+</body>
+</html>
