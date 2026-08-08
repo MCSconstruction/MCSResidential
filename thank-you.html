@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — Your Estimate Request Was Received | Missouri Concrete Services</title>
+  <meta name="description" content="Thank you. Your residential concrete estimate request has been received. Missouri Concrete Services will reply within 24 hours." />
+  <meta name="robots" content="noindex" />
+
+  <!--
+    MCS RESIDENTIAL — Thank-you / confirmation page.
+    The estimate form on index.html redirects here via its _next field.
+    Keep this file in the same folder as index.html at the repo root.
+  -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yellow:        "#F4DB03",
+            "yellow-dark": "#D69E00",
+            charcoal:      "#2A2A2A",
+            ink:           "#0A0A0A",
+            concrete:      "#E8E6E1",
+            "concrete-dk": "#C9C6BE",
+            body:          "#1A1A1A",
+            muted:         "#5A5A5A",
+            hair:          "#D9D6D0"
+          },
+          fontFamily: {
+            sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="font-sans text-body bg-white antialiased min-h-screen flex flex-col">
+
+  <!-- ============ STICKY CALL BAR (matches landing page) ============ -->
+  <header class="sticky top-0 z-50 bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="text-yellow font-extrabold tracking-tight text-lg leading-none">MCS</span>
+        <span class="hidden sm:inline text-sm text-white/70 truncate">Missouri Concrete Services &middot; Since 2017</span>
+      </div>
+      <a href="tel:8166922900"
+         class="shrink-0 bg-yellow text-ink font-bold rounded-lg px-4 py-2 text-sm sm:text-base hover:bg-yellow-dark transition-colors">
+        Call 816-692-2900
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ CONFIRMATION ============ -->
+  <main class="flex-1 flex items-center justify-center px-4 py-16">
+    <div class="max-w-xl w-full text-center">
+
+      <!-- Check mark -->
+      <div class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-yellow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-11 w-11 text-ink" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-ink tracking-tight">
+        Request Received &mdash; Thank You!
+      </h1>
+
+      <p class="mt-4 text-lg text-body">
+        Your estimate request is in. A member of the Missouri Concrete Services team
+        will personally review your project and get back to you
+        <span class="font-bold">within 24 hours</span>.
+      </p>
+
+      <p class="mt-3 text-muted">
+        Need to reach us sooner? Give us a call and we'll get you a fast answer.
+      </p>
+
+      <!-- Actions -->
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="tel:8166922900"
+           class="w-full sm:w-auto bg-yellow text-ink font-bold rounded-lg px-6 py-3 text-base hover:bg-yellow-dark transition-colors">
+          Call 816-692-2900
+        </a>
+        <a href="index.html"
+           class="w-full sm:w-auto border-2 border-ink text-ink font-bold rounded-lg px-6 py-3 text-base hover:bg-concrete transition-colors">
+          Back to Home
+        </a>
+      </div>
+
+      <p class="mt-10 text-sm text-muted">
+        Residential driveways, patios &amp; garage floors &middot; Finished in 1&ndash;2 days
+      </p>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER (matches landing page) ============ -->
+  <footer class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+      <p class="text-yellow font-extrabold text-lg tracking-tight">Missouri Concrete Services</p>
+      <p class="mt-1 text-sm text-white/70">Residential Concrete Flatwork &middot; Established 2017</p>
+      <p class="mt-1 text-sm text-white/60">
+        Serving from St. Joseph to Peculiar, and east to the Kickapoo Reservation
+      </p>
+      <p class="mt-4 text-xs text-white/40">&copy; 2026 Missouri Concrete Services</p>
+    </div>
+  </footer>
+
+</body>
+</html>
